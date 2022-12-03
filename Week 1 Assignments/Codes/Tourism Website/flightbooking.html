@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to FlightCarter</title>
+</head>
+<body>
+    <h2>Search Flights at Lowest Price</h2>
+    <img src="images/plane.png" alt="icon" width="100"><br>
+    <form align: center; action="">
+    <input type="radio" name="journey-type" id=""> One-Way 
+    <input type="radio" name="journey-type" id="">Round-Trip
+    <input type="radio" name="journey-type" id="">Multi-City <br>
+    <br>
+    <input type="radio" name="Speciality" id=""> Defence Forces
+    <input type="radio" name="Speciality" id=""> Students
+    <input type="radio" name="Speciality" id=""> Senior Citizens
+    <input type="radio" name="Speciality" id=""> Doctors & Nurses <br> <br>
+    From: <label for="From"></label>
+        <select name="From" id="From">
+            <option value="none" selected disabled hidden>Select an Option</option>
+            <option value="Hyderabad">HYD-Hyderabad</option>
+            <option value="Bengaluru">BLR-Bengaluru</option>
+            <option value="Chennai">MAA-Chennai</option>
+            <option value="Mumbai">BOM-Mumbai</option>
+        </select>
+    &nbsp To: <label for="To"></label>
+    <select name="To" id="To">
+        <option value="none" selected disabled hidden>Select an Option</option>
+        <option value="Hyderabad">HYD-Hyderabad</option>
+        <option value="Bengaluru">BLR-Bengaluru</option>
+        <option value="Chennai">MAA-Chennai</option>
+        <option value="Mumbai">BOM-Mumbai</option>
+    </select> <br> <br>
+    Departure Date: <input type="date" name="" id="" required>
+    &nbsp Return Date: <input type="date" name="" id="" > <br> <br>
+    Traveller(s): <input type="number" name="" id="Traveller" max="10" min="1"> <br> <br>
+    Class: <label for="service"></label>
+    <select name="service" id="service">
+    <option value="none" selected disabled hidden>Select an Option</option>
+    <option value="Economy">Economy</option>
+    <option value="Prem.Economy">Prem.Economy</option>
+    <option value="Business">Business</option>
+    <option value="First">First</option>
+    </select> <br> <br>   
+    <input type="submit" value="Search">
+    <input type="reset" value="Reset">  <br> <br>
+</form>
+<button>Web-Checkin</button> <br> <br>
+    Need to book your bus tickets? Check them <a href="Busbooking.html">here.</a> <br> <br>
+    Need Hotel to stay at Destination? Please Check <a href="hotelbooking.html">Here</a>
+</body>
+</html>

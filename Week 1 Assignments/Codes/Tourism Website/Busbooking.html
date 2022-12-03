@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to TSRTC</title>
+</head>
+<body>
+    <h2>Search & Book Bus Tickets</h2>
+    <img src="images/bus.jpg" alt="" width="300"><br>
+    <form align: center; action="">
+    <input type="radio" name="journey-type" id=""> One-Way 
+    <input type="radio" name="journey-type" id="">Two-Way <br>
+    <br>
+    From: <label for="From"></label>
+        <select name="From" id="From">
+            <option value="none" selected disabled hidden>Select an Option</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Mumbai">Mumbai</option>
+        </select> <br> <br>
+    To: <label for="To"></label>
+    <select name="To" id="To">
+        <option value="none" selected disabled hidden>Select an Option</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Bengaluru">Bengaluru</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Mumbai">Mumbai</option>
+    </select> <br> <br>
+    Onward Date: <input type="date" name="" id="" required>
+    Onward Time: <label for="Onward-time"></label>
+        <select name="Onward-time" id="Onward-time">
+        <option value="none" selected disabled hidden>Select an Option</option>
+        <option value="09:00 AM">09:00 AM</option>
+        <option value="12:00 PM">12:00 PM</option>
+        <option value="03:00 PM">03:00 PM</option>
+        <option value="06:00 PM">06:00 PM</option>
+        </select> <br> <br>
+    Return Date: <input type="date" name="" id="" required>
+    Return Time: 
+            <label for="return-time"></label>
+            <select name="return-time" id="return-time">
+            <option value="none" selected disabled hidden>Select an Option</option>
+            <option value="09:00 AM">09:00 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="03:00 PM">03:00 PM</option>
+            <option value="06:00 PM">06:00 PM</option>
+            </select> <br> <br>
+    No.of Passengers:
+    <label for="Passengers"></label>
+            <select name="Passengers" id="Passengers">
+            <option value="none" selected disabled hidden>Select an Option</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            </select> <br> <br>
+    <input type="checkbox" name="Ladies" id=""> All Ladies <br> <br>
+    Service Class: <label for="service"></label>
+    <select name="service" id="service">
+    <option value="none" selected disabled hidden>Select an Option</option>
+    <option value="Premium">Premium</option>
+    <option value="Luxury">Luxury</option>
+    <option value="Deluxe">Deluxe</option>
+    <option value="Express">Express</option>
+    </select> <br> <br>   
+    <input type="submit" value="Search for Buses">
+    <input type="reset" value="Reset">  <br> <br>
+</form>
+    Need Hotel? Please Check <a href="hotelbooking.html">Here</a>
+</body>
+</html>
