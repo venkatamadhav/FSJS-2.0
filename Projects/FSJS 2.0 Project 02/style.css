@@ -1,0 +1,109 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+html {
+  font-family: "Montserrat";
+}
+body {
+  margin: 0;
+}
+.container {
+  background-image: url("./assets/bg.png");
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 48px;
+}
+.grow-list {
+  flex: auto;
+  position: relative;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+}
+.list-item {
+  padding: 24px;
+}
+/* .navbar .grow-list .list > :first-child::before {
+  content: "|";
+  position: absolute;
+  left: 112px;
+  top: 40px;
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-style: normal;
+} */
+
+.navbar .grow-list .list > :first-child::after {
+  content: "ˇ";
+  position: absolute;
+  left: 112px;
+  top: 40px;
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+img {
+  width: 100px;
+  height: 40px;
+}
+
+.button-small {
+  background-color: #ba0cc5;
+  border: none;
+  border-radius: 4px;
+  margin: 12px;
+  width: 128px;
+  height: 36px;
+  border: 12px;
+  color: #fff;
+  font-size: 16px;
+}
+.button-large {
+  background-color: #ba0cc5;
+  border: none;
+  border-radius: 8px;
+  margin: 12px;
+  padding: 12px;
+  color: #fff;
+  margin-top: 44px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.hero-heading {
+  color: #fff;
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 44px;
+  margin-bottom: 0px;
+}
+.hero-description {
+  color: #fff;
+  font-size: 24px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  margin-left: 84px;
+  margin-right: 84px;
+  text-align: center;
+}
