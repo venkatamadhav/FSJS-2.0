@@ -1,4 +1,4 @@
-let number = parseInt(prompt("Enter a number:"));
+let number = parseInt(prompt("Enter a number: (without decimals)"));
 let remainder = number%2;
 if(remainder==0){
     document.write("The entered number is Even");
