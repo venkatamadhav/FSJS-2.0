@@ -10,16 +10,16 @@ let nine = (4 != '4');
 let ten = (4 == '4');
 let eleven = (4 === '4');
 
-console.log(one == (4>3));
-console.log(two == (4 >= 3));
-console.log(three == (4 < 3));
-console.log(four == (4 <= 3));
-console.log(five == (4 == 4));
-console.log(six == (4 === 4));
-console.log(seven == (4 != 4));
-console.log(eight == (4 !== 4));
-console.log(nine == (4 != '4'));
-console.log(ten == (4 == '4'));
-console.log(eleven == (4 === '4'));
+console.log(one == true);
+console.log(two == true);
+console.log(three == false);
+console.log(four == false);
+console.log(five == true);
+console.log(six == true);
+console.log(seven == false);
+console.log(eight == false);
+console.log(nine == false);
+console.log(ten == true);
+console.log(eleven == false);
 
 console.log('python'.length !== 'jargon'.length);
