@@ -1,21 +1,26 @@
-let month1 = prompt("Please Enter the month:");
-// let month1 = month.toLowerCase();
-if(month1 == september || month1 == october || month1 == november)
+let month = prompt("Please Enter the month:");
+let month1 = month.toLowerCase();
+const Autumn = ["september","october","november","sept","oct","nov"];
+const Winter = ["december","january","february","dec","jan","feb"];
+const Spring = ["march","april","may","mar","apr"];
+const Summer = ["june","july","august","jun","jul","aug"];
+
+if(Autumn.includes(month1))
 {
-    document.write("Hey!! This is Autumn Season");
+    document.getElementById("main").innerText = "Hey!! This is Autumn Season";
 }
-else if(month1 == december || month1 == january || month1 == february)
+else if(Winter.includes(month))
 {
-    document.write("Hey!! This is Winter Season");
+    document.getElementById("main").innerText = "Hey!! This is Winter Season";  
 }
-else if(month1 == march || month1 == april || month1 == may)
+else if(Spring.includes(month))
 {
-    document.write("Hey!! This is Spring Season");
+    document.getElementById("main").innerText = "Hey!! This is Spring Season";
 }
-else if(month1 == june || month1 == july || month1 == august)
+else if(Summer.includes(month))
 {
-    document.write("Hey!! This is Summer Season");
+    document.getElementById("main").innerText = "Hey!! This is Summer Season";
 }
 else{
-    document.write("Please enter the momth properly. For ex: september");
+    document.getElementById("main").innerText = "Please enter the momth properly. For ex: september or sept";
 }
