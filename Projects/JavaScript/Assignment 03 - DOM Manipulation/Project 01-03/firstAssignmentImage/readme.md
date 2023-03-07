@@ -5,13 +5,13 @@
 #### Solution:
 
 ```
-\\ -------- Adding Hire Me in Header ----------
+-------- Adding Hire Me in Header ----------
 const ul = document.getElementsByTagName("ul")[0]; \\ Selecting first ul element
 Hireme = document.createElement("li"); \\Creating an li element
 Hireme.innerText = 'Hire Me'; \\Assigning inter text to li
 ul.appendChild(Hireme); \\Appending li into ul
 
-\\ -------- Hiding Social Media icons from Footer ---------
+ -------- Hiding Social Media icons from Footer ---------
 const icons = document.querySelector("footer ul");
 icons.style.display = 'none';
 ```
@@ -21,11 +21,11 @@ icons.style.display = 'none';
 #### Solution:
 
 ```
-\\ ----- Changing Search Bar Placeholder -----
+ ----- Changing Search Bar Placeholder -----
 const Searchbar = document.querySelector(".search-field input"); \\ Selecting Text input
 Searchbar.placeholder = "Search My Project"; \\ Rewriting the place holder
 
-\\ ----- Hiding Social Media icons from Footer -----
+ ----- Hiding Social Media icons from Footer -----
 const icons = document.querySelector("footer ul");
 icons.style.display = 'none';
 ```
@@ -35,7 +35,7 @@ icons.style.display = 'none';
 #### Solution:
 
 ```
-const elements = document.querySelectorAll(".hero-left-section p span");
+const elements = document.querySelectorAll(".hero-left-section p span"); \\Selecting all the span elements
 elements[1].innerText = "an Employee";
 elements[2].innerText = "iNeuron Intelligence Pvt Ltd";
 ```
@@ -45,7 +45,7 @@ elements[2].innerText = "iNeuron Intelligence Pvt Ltd";
 #### Solution:
 
 ```
-let image = document.querySelector(".hero-right-section img");
+let image = document.querySelector(".hero-right-section img"); \\Selecting the Image
 image.src = "https://hiteshchoudhary.com/static/a8d73d1aac4c79e9bb689640e6090367/2eaab/person-image.jpg";
 
 ```
@@ -55,7 +55,7 @@ image.src = "https://hiteshchoudhary.com/static/a8d73d1aac4c79e9bb689640e6090367
 #### Solution:
 
 ```
-const newbutton = document.createElement("button");
-newbutton.innerText = "Support Me";
-document.querySelector(".hero-right-section-btns").appendChild(newbutton);
+const newbutton = document.createElement("button"); \\ Create New Button Element
+newbutton.innerText = "Support Me"; \\ Adding innerText to Button
+document.querySelector(".hero-right-section-btns").appendChild(newbutton); \\ Appending Button to Parent
 ```
