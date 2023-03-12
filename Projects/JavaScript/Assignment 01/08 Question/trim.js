@@ -1,4 +1,4 @@
-let sentence ="     This sentence is to demonstrate how to use trim function to remove unneccessary spaces in a text                    "
+let sentence ="     This sentence is to demonstrate how to use trim function to remove unnecessary spaces in a text                    "
 
 // In the below console log , it removes spaces from either ends.
 console.log(sentence.trim());
