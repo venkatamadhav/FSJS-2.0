@@ -28,3 +28,4 @@ Please feel free to check them and give any suggestions.
 2. DOM Manipulation:
    - 2.1 [Project 1](https://github.com/venkatamadhav/FSJS-2.0/tree/main/Projects/JavaScript/Assignment%2003%20-%20DOM%20Manipulation/Project%2001-03/firstAssignmentImage)
    - 2.2 [Project 2](https://github.com/venkatamadhav/FSJS-2.0/tree/main/Projects/JavaScript/Assignment%2003%20-%20DOM%20Manipulation/Project%2001-03/secondAssignmentImage)
+   - 2.3 [Project 3](https://github.com/venkatamadhav/FSJS-2.0/tree/main/Projects/JavaScript/Assignment%2003%20-%20DOM%20Manipulation/Project%2001-03/thirdAssignmentImage)
