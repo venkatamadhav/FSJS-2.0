@@ -31,3 +31,5 @@ Please feel free to check them and give any suggestions.
    - 3.2 [Project 2](https://github.com/venkatamadhav/FSJS-2.0/tree/main/Projects/JavaScript/Assignment%2003%20-%20DOM%20Manipulation/Project%2001-03/secondAssignmentImage)
    - 3.3 [Project 3](https://github.com/venkatamadhav/FSJS-2.0/tree/main/Projects/JavaScript/Assignment%2003%20-%20DOM%20Manipulation/Project%2001-03/thirdAssignmentImage)
    - 3.4 [Project 4](https://github.com/venkatamadhav/FSJS-2.0/tree/main/Projects/JavaScript/Assignment%2003%20-%20DOM%20Manipulation/Project%2004/04_DOM%20Project)
+   - 3.5 [Project 5](https://github.com/venkatamadhav/FSJS-2.0/tree/main/Projects/JavaScript/Assignment%2003%20-%20DOM%20Manipulation/Project%2005)
+   - 3.6 [Project 6](https://github.com/venkatamadhav/FSJS-2.0/tree/main/Projects/JavaScript/Assignment%2003%20-%20DOM%20Manipulation/Project%2006)
