@@ -30,12 +30,31 @@ function App() {
     })
   }
   const completed = tasks.filter(t => t.done).length;
-  const total = tasks.length
+  const total = tasks.length;
+  
+  function message(){
+    const percentage = (completed/total)*100;
+    if (percentage === 0){
+      return 'You need to start working!!!';
+    }
+    else if (percentage > 0 && percentage <30){
+      return "Come on.. Try to complete at least half";
+    }
+    else if (percentage > 50 & percentage <100){
+      return "Thats good. You completed more than half!!"
+    }
+    else if (percentage === 100){
+      return 'Great Job!! You completed all.'
+    }
+    return 'Keep it Going...'
+  }
+
 
   return (
     <main>
     <h1>ToDo App</h1>
     <h2>{completed}/{total} Completed</h2>
+    <h3>{message()}</h3>
     <Tasksform onAdd={addTask}/>
     {tasks.map((task,index) => (
       <Tasks {...task} onToggle={done => updateTaskDone(index, done)}/>
