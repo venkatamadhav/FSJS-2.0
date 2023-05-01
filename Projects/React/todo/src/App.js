@@ -75,7 +75,7 @@ function App() {
     <h2>{completed}/{total} Completed</h2>
     <h3>{message()}</h3>
     <Tasksform onAdd={addTask}/>
-    {tasks.map((task,index) => (
+    {tasks && tasks.map((task,index) => (
       <Tasks key={index} {...task}
       onRename={newName => renameTask(index,newName)} 
       onToggle={done => updateTaskDone(index, done)}
