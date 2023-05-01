@@ -48,8 +48,8 @@ function App() {
   }
 
 
-  const completed = tasks.filter(t => t.done).length;
-  const total = tasks.length;
+  const completed = tasks ? tasks.filter(t => t.done).length : 0;
+  const total = tasks ? tasks.length : 0;
   
   function message(){
     const percentage = (completed/total)*100;
