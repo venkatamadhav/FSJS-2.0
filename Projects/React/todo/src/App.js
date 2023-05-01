@@ -24,7 +24,9 @@ function App() {
 
   function deleteTask(indexremove){
     settasks(prev => {
-      return prev.filter((taskss,index) => index !== indexremove)
+      const newTasks = prev.filter((taskss,index) => index !== indexremove)
+      localStorage.setItem('tasks', JSON.stringify(newTasks));
+      return newTasks;
     })
   }
 
@@ -74,7 +76,7 @@ function App() {
     <h3>{message()}</h3>
     <Tasksform onAdd={addTask}/>
     {tasks.map((task,index) => (
-      <Tasks {...task}
+      <Tasks key={index} {...task}
       onRename={newName => renameTask(index,newName)} 
       onToggle={done => updateTaskDone(index, done)}
       onDelete={() => deleteTask(index)}
