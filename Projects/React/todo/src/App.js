@@ -22,6 +22,13 @@ function App() {
     })
   }
 
+  function deleteTask(indexremove){
+    settasks(prev => {
+      return prev.filter((taskss,index) => index !== indexremove)
+    })
+  }
+
+
   function updateTaskDone(taskIndex, newDone){
     settasks(prev => {
       const newTasks = [...prev];
@@ -29,6 +36,16 @@ function App() {
       return newTasks;
     })
   }
+
+  function renameTask(index,newName){
+    settasks(prev => {
+      const newTasks = [...prev];
+      newTasks[index].name = newName;
+      return newTasks;
+    })
+  }
+
+
   const completed = tasks.filter(t => t.done).length;
   const total = tasks.length;
   
@@ -57,7 +74,11 @@ function App() {
     <h3>{message()}</h3>
     <Tasksform onAdd={addTask}/>
     {tasks.map((task,index) => (
-      <Tasks {...task} onToggle={done => updateTaskDone(index, done)}/>
+      <Tasks {...task}
+      onRename={newName => renameTask(index,newName)} 
+      onToggle={done => updateTaskDone(index, done)}
+      onDelete={() => deleteTask(index)}
+      />
     ))}
     
     </main>

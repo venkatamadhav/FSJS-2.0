@@ -52,7 +52,8 @@ h2,
 h3 {
   text-align: center;
 }
-div.task-name {
+div.task-name,
+div.tasks form {
   flex-grow: 1;
 }
 button.trash {
@@ -68,4 +69,9 @@ button.trash svg {
 div.checkbox {
   display: flex;
   align-items: center;
+}
+div.tasks input {
+  border: 2px solid #777;
+  border-radius: 6px;
+  padding: 2px 4px;
 }
