@@ -1,11 +1,11 @@
 import React from 'react'
 import Checkbox from './Checkbox'
 
-function Tasks({name,done}) {
+function Tasks({name,done,onToggle}) {
   return (
-    <div className='tasks'>
-        <Checkbox defaultChecked={done}/>
-        {name}
+    <div className={'tasks ' + (done?'done':'notdone')}>
+        <Checkbox checked={done} onClick={() => onToggle(!done)}/>
+        <span className='tasksss'>{name}</span>
     </div>
   )
 }

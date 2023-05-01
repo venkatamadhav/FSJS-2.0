@@ -21,11 +21,24 @@ function App() {
       return [...prev, {name:name, done:false}]
     })
   }
+
+  function updateTaskDone(taskIndex, newDone){
+    settasks(prev => {
+      const newTasks = [...prev];
+      newTasks[taskIndex].done = newDone;
+      return newTasks;
+    })
+  }
+  const completed = tasks.filter(t => t.done).length;
+  const total = tasks.length
+
   return (
     <main>
+    <h1>ToDo App</h1>
+    <h2>{completed}/{total} Completed</h2>
     <Tasksform onAdd={addTask}/>
-    {tasks.map(task => (
-      <Tasks {...task}/>
+    {tasks.map((task,index) => (
+      <Tasks {...task} onToggle={done => updateTaskDone(index, done)}/>
     ))}
     
     </main>
