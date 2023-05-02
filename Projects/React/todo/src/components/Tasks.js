@@ -12,7 +12,10 @@ function Tasks({name,done,onToggle,onDelete,onRename}) {
         </div>
         )}
         {editMode && (
-          <form onSubmit={ev => {ev.preventDefault();setEditMode(false)}}>
+          <form onSubmit={ev => {
+            ev.preventDefault();
+            setEditMode(false)
+            }}>
             <input type="text" value={name} onChange={ev => onRename(ev.target.value)} />
           </form>
         )}
