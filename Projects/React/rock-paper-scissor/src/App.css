@@ -1,0 +1,39 @@
+h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 8px;
+}
+h2 {
+  font-size: 16px;
+}
+.main-component {
+  text-align: center;
+}
+.player-container {
+  display: flex;
+  justify-content: center;
+}
+.player {
+  margin: 10px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+}
+.btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  margin: 4px;
+  cursor: pointer;
+}
+.score {
+  padding: 1px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.action {
+  margin: auto;
+}
