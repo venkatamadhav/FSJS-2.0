@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 // import {FaHandRock , FaHandPaper, FaHandScissors } from "react-icons/fa"
 import ActionIcon from './ActionIcon.js'
 
-function Player({name ="Player", score = 0, action="rock"}) {
+function PlayerMenu({name ="Player", score = 0, action="rock"}) {
   return (
         <div className='player'>
             <div className='score'>{`${name}: ${score}`}</div>
@@ -13,5 +13,4 @@ function Player({name ="Player", score = 0, action="rock"}) {
   )
 }
 
-export default Player
-// export default ActionIcon
+export default PlayerMenu
