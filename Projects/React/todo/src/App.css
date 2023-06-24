@@ -75,3 +75,14 @@ div.tasks input {
   border-radius: 6px;
   padding: 2px 4px;
 }
+button#rename {
+  background: none;
+  border: none;
+  display: flex;
+  cursor: pointer;
+}
+button#rename svg {
+  padding-left: 4px;
+  fill: #aaa;
+  height: 18px;
+}

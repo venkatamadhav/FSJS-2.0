@@ -18,7 +18,7 @@ function App() {
 
   function addTask(name){
     settasks(prev => {
-      return [...prev, {name:name, done:false}]
+      return [{name:name, done:false} , ...prev, ]
     })
   }
 
